@@ -1,0 +1,14 @@
+{
+    "description": "Responsive design utilities",
+    "origamiType": "module",
+    "origamiVersion": 1,
+    "support": "https://github.com/Pearson-Higher-Ed/o-responsive/issues",
+    "supportStatus": "active",
+    "demos": [
+        {
+            "path": "/demos/demo.html",
+            "expanded": true,
+            "description": ""
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+////
+/// @group o-responsive
+/// @link http://registry.origami.ft.com/components/o-responsive
+////
+
+/// Hello world
+///
+/// @param {String} $who [world]
+@mixin oResponsiveHello($who: world) {
+	.foo {
+		content: 'Hello, #{$who}!';
+	}
+}
