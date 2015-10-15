@@ -3,11 +3,71 @@
 /// @link http://registry.origami.ft.com/components/o-responsive
 ////
 
-/// Hello world
-///
-/// @param {String} $who [world]
-@mixin oResponsiveHello($who: world) {
-	.foo {
-		content: 'Hello, #{$who}!';
+/// Generates the breakpoint visibility classes
+@mixin o-responsive-visibility() {
+	// Visible
+	.o-responsive__xs--visible,
+	.o-responsive__sm--visible,
+	.o-responsive__md--visible,
+	.o-responsive__lg--visible,
+	.o-responsive__xl--visible {
+		display: none !important;
+	}
+
+	@media (max-width: $o-responsive-xs-max) {
+		@include o-responsive-visible('.o-responsive__xs--visible');
+	}
+
+	@media (min-width: $o-responsive-sm-min) and (max-width: $o-responsive-sm-max) {
+		@include o-responsive-visible('.o-responsive__sm--visible');
+	}
+
+	@media (min-width: $o-responsive-md-min) and (max-width: $o-responsive-md-max) {
+		@include o-responsive-visible('.o-responsive__md--visible');
+	}
+
+	@media (min-width: $o-responsive-lg-min) and (max-width: $o-responsive-lg-max) {
+		@include o-responsive-visible('.o-responsive__lg--visible');
+	}
+
+	@media (min-width: $o-responsive-xl-min) {
+		@include o-responsive-visible('.o-responsive__xl--visible');
+	}
+
+	// Hidden
+	@media (max-width: $o-responsive-xs-max) {
+		@include o-responsive-hidden('.o-responsive__xs--hidden');
+	}
+
+	@media (min-width: $o-responsive-sm-min) and (max-width: $o-responsive-sm-max) {
+		@include o-responsive-hidden('.o-responsive__sm--hidden');
+	}
+
+	@media (min-width: $o-responsive-md-min) and (max-width: $o-responsive-md-max) {
+		@include o-responsive-hidden('.o-responsive__md--hidden');
+	}
+
+	@media (min-width: $o-responsive-lg-min) and (max-width: $o-responsive-lg-max) {
+		@include o-responsive-hidden('.o-responsive__lg--hidden');
+	}
+
+	@media (min-width: $o-responsive-xl-min) {
+		@include o-responsive-hidden('.o-responsive__xl--hidden');
+	}
+}
+
+/// Generates a visible class
+@mixin o-responsive-visible($parent) {
+	// scss-lint:disable ImportantRule
+	#{$parent} {
+		display: block !important;
+	}
+}
+
+/// Generates a hidden class
+@mixin o-responsive-hidden($parent) {
+	// scss-lint:disable ImportantRule
+	#{$parent} {
+		display: none !important;
 	}
 }

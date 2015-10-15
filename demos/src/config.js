@@ -3,12 +3,13 @@
 module.exports = {
 	options: {
 		sass: 'demos/src/demo.scss',
-		js: 'demos/src/demo.js'
+		js: 'demos/src/demo.js',
+		dependencies: 'o-fonts@^1.0.0'
 	},
 	demos: [
 		{
-			name: 'demo',
-			template: 'demos/src/demo.mustache'
+			name: 'visibility',
+			template: 'demos/src/visibility.mustache'
 		}
 	]
 };

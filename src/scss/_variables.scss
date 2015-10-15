@@ -5,4 +5,24 @@
 
 /// Silent mode
 /// @type Bool
-$o-responsive-is-silent: true !default;
+$o-responsive-is-silent: false !default;
+
+/// Responsive breakpoints
+
+// Extra small
+$o-responsive-xs-max: 479px !default;
+
+// Small
+$o-responsive-sm-min: $o-responsive-xs-max + 1 !default;
+$o-responsive-sm-max: 767px !default;
+
+// Medium
+$o-responsive-md-min: $o-responsive-sm-max + 1 !default;
+$o-responsive-md-max: 1023px !default;
+
+// Large
+$o-responsive-lg-min: $o-responsive-md-max + 1 !default;
+$o-responsive-lg-max: 1279px !default;
+
+// Extra large
+$o-responsive-xl-min: $o-responsive-lg-max + 1 !default;

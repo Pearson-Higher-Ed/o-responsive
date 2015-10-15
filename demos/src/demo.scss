@@ -1,4 +1,23 @@
-$o-assets-global-path: '/bower_components/';
-$o-responsive-is-silent: false;
-
 @import '../../main';
+
+html {
+    font-family: HelveticaNeue, sans-serif;
+}
+
+.demo-visibility {
+	td {
+		padding: 5px 0;
+		border: 1px solid #cccccc;
+	}
+}
+
+.demo-visibility-check {
+	width: 100%;
+	color: green;
+	line-height: 1em;
+	text-align: center;
+
+	&:before {
+		content: '✓';
+	}
+}
