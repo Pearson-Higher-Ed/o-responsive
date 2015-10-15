@@ -11,6 +11,7 @@
 	.o-responsive__md--visible,
 	.o-responsive__lg--visible,
 	.o-responsive__xl--visible {
+		// scss-lint:disable ImportantRule
 		display: none !important;
 	}
 
