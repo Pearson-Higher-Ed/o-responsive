@@ -15,44 +15,44 @@
 		display: none !important;
 	}
 
-	@media (max-width: $o-responsive-xs-max) {
+	@include o-responsive-breakpoint(xs to xs) {
 		@include o-responsive-visible('.o-responsive__xs--visible');
 	}
 
-	@media (min-width: $o-responsive-sm-min) and (max-width: $o-responsive-sm-max) {
+	@include o-responsive-breakpoint(sm to sm) {
 		@include o-responsive-visible('.o-responsive__sm--visible');
 	}
 
-	@media (min-width: $o-responsive-md-min) and (max-width: $o-responsive-md-max) {
+	@include o-responsive-breakpoint(md to md) {
 		@include o-responsive-visible('.o-responsive__md--visible');
 	}
 
-	@media (min-width: $o-responsive-lg-min) and (max-width: $o-responsive-lg-max) {
+	@include o-responsive-breakpoint(lg to lg) {
 		@include o-responsive-visible('.o-responsive__lg--visible');
 	}
 
-	@media (min-width: $o-responsive-xl-min) {
+	@include o-responsive-breakpoint(xl to xl) {
 		@include o-responsive-visible('.o-responsive__xl--visible');
 	}
 
 	// Hidden
-	@media (max-width: $o-responsive-xs-max) {
+	@include o-responsive-breakpoint(xs to xs) {
 		@include o-responsive-hidden('.o-responsive__xs--hidden');
 	}
 
-	@media (min-width: $o-responsive-sm-min) and (max-width: $o-responsive-sm-max) {
+	@include o-responsive-breakpoint(sm to sm) {
 		@include o-responsive-hidden('.o-responsive__sm--hidden');
 	}
 
-	@media (min-width: $o-responsive-md-min) and (max-width: $o-responsive-md-max) {
+	@include o-responsive-breakpoint(md to md) {
 		@include o-responsive-hidden('.o-responsive__md--hidden');
 	}
 
-	@media (min-width: $o-responsive-lg-min) and (max-width: $o-responsive-lg-max) {
+	@include o-responsive-breakpoint(lg to lg) {
 		@include o-responsive-hidden('.o-responsive__lg--hidden');
 	}
 
-	@media (min-width: $o-responsive-xl-min) {
+	@include o-responsive-breakpoint(xl to xl) {
 		@include o-responsive-hidden('.o-responsive__xl--hidden');
 	}
 }

@@ -28,6 +28,66 @@ To hide an element:
 
 See the [demo](https://origami.pearsoned.com/registry/components/o-responsive) for example usage.
 
+## Advanced usage
+
+### Breakpoints
+
+The breakpoint min and max values are defined as Sass variables using the format `$o-responsive-*-(min|max)`, e.g. `$o-responsive-md-min`. There are no min and max values for the smallest (`xs`) and largest (`xl`) breakpoints, respectively. The following breakpoints are defined:
+
+```
+xs:           width < 480px
+sm: >= 480px  width < 768px
+md: >= 768px  width < 1024px
+lg: >= 1024px width < 1280px
+xl: >= 1280px width
+```
+
+#### o-responsive-breakpoint($min-bp to $max-bp)
+
+The `o-responsive-breakpoint` mixin generates media queries for the standard breakpoints. Breakpoints are inclusive; for example, `sm to lg` means that the styles will be applied at the small, medium, and large breakpoints. If the lower or upper bound is ommitted, styles will be applied to the specified breakpoint and any smaller or larger breakpoints, respectively.
+
+```sass
+// Sass
+.foo {
+	color: red;
+
+	@include o-responsive-breakpoint(sm) {
+		color: blue;
+	}
+
+	@include o-responsive-breakpoint(md to lg) {
+		color: green;
+	}
+
+	@include o-responsive-breakpoint(to xs) {
+		color: purple;
+	}
+}
+
+// CSS
+.foo {
+	color: red;
+}
+
+@media (min-width: 480px) {
+	.foo {
+		color: blue;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+	.foo {
+		color: green;
+	}
+}
+
+@media (max-width: 479px) {
+	.foo {
+		color: purple;
+	}
+}
+```
+
 ## License
 
 This software is published by Pearson Education under the [MIT license](LICENSE).

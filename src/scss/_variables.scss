@@ -26,3 +26,12 @@ $o-responsive-lg-max: 1279px !default;
 
 // Extra large
 $o-responsive-xl-min: $o-responsive-lg-max + 1 !default;
+
+// Private
+$o-responsive-breakpoints: (
+	xs: (max: $o-responsive-xs-max),
+	sm: (min: $o-responsive-sm-min, max: $o-responsive-sm-max),
+	md: (min: $o-responsive-md-min, max: $o-responsive-md-max),
+	lg: (min: $o-responsive-lg-min, max: $o-responsive-lg-max),
+	xl: (min: $o-responsive-xl-min)
+);
