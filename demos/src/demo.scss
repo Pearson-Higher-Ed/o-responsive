@@ -4,14 +4,15 @@ html {
     font-family: HelveticaNeue, sans-serif;
 }
 
-.demo-visibility {
+.demo-table {
 	td {
-		padding: 5px 0;
+		padding: 5px;
 		border: 1px solid #cccccc;
 	}
 }
 
 .demo-visibility-check {
+	display: block;
 	width: 100%;
 	color: green;
 	line-height: 1em;

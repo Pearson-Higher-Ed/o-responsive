@@ -1,7 +1,7 @@
 <p>Using the visibility CSS classes, elements can be displayed or hidden based on the viewport width.</p>
 
 <h2>Visible</h2>
-<table class="demo-visibility">
+<table class="demo-table">
 	<thead>
 		<tr>
 			<th>Class</th>
@@ -10,30 +10,30 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td>.o-responsive__xs--visible</td>
+			<td>o-responsive__xs--visible</td>
 			<td><span class="o-responsive__xs--visible demo-visibility-check"></span></td>
 		</tr>
 		<tr>
-			<td>.o-responsive__sm--visible</td>
+			<td>o-responsive__sm--visible</td>
 			<td><span class="o-responsive__sm--visible demo-visibility-check"></span></td>
 		</tr>
 		<tr>
-			<td>.o-responsive__md--visible</td>
+			<td>o-responsive__md--visible</td>
 			<td><span class="o-responsive__md--visible demo-visibility-check"></span></td>
 		</tr>
 		<tr>
-			<td>.o-responsive__lg--visible</td>
+			<td>o-responsive__lg--visible</td>
 			<td><span class="o-responsive__lg--visible demo-visibility-check"></span></td>
 		</tr>
 		<tr>
-			<td>.o-responsive__xl--visible</td>
+			<td>o-responsive__xl--visible</td>
 			<td><span class="o-responsive__xl--visible demo-visibility-check"></span></td>
 		</tr>
 	</tbody>
 </table>
 
 <h2>Hidden</h2>
-<table class="demo-visibility">
+<table class="demo-table">
 	<thead>
 		<tr>
 			<th>Viewport Size</th>
@@ -42,24 +42,45 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td>.o-responsive__xs--hidden</td>
+			<td>o-responsive__xs--hidden</td>
 			<td><span class="o-responsive__xs--hidden demo-visibility-check"></span></td>
 		</tr>
 		<tr>
-			<td>.o-responsive__sm--hidden</td>
+			<td>o-responsive__sm--hidden</td>
 			<td><span class="o-responsive__sm--hidden demo-visibility-check"></span></td>
 		</tr>
 		<tr>
-			<td>.o-responsive__md--hidden</td>
+			<td>o-responsive__md--hidden</td>
 			<td><span class="o-responsive__md--hidden demo-visibility-check"></span></td>
 		</tr>
 		<tr>
-			<td>.o-responsive__lg--hidden</td>
+			<td>o-responsive__lg--hidden</td>
 			<td><span class="o-responsive__lg--hidden demo-visibility-check"></span></td>
 		</tr>
 		<tr>
-			<td>.o-responsive__xl--hidden</td>
+			<td>o-responsive__xl--hidden</td>
 			<td><span class="o-responsive__xl--hidden demo-visibility-check"></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Tables</h2>
+<p>The table below is visible at the <strong>sm</strong> and <strong>md</strong> breakpoints.</p>
+<table class="demo-table o-responsive__sm--visible o-responsive__md--visible">
+	<thead>
+		<tr>
+			<th>Heading</th>
+			<th class="o-responsive__md--visible">Heading visible in md</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Row</td>
+			<td class="o-responsive__md--visible">Cell visible in md</td>
+		</tr>
+		<tr class="o-responsive__md--visible">
+			<td>Row visible in md</td>
+			<td></td>
 		</tr>
 	</tbody>
 </table>
