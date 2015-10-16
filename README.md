@@ -28,6 +28,25 @@ To hide an element:
 
 See the [demo](https://origami.pearsoned.com/registry/components/o-responsive) for example usage.
 
+## Accessibility
+
+### Making content visible to screen readers
+
+In some cases, content needs to be hidden visually but remain visible to assistive technology. Use the `o-responsive__sr-only` class to hide elements so that they are still read by screen readers:
+
+```html
+<p class="o-responsive__sr-only">This text is hidden visually but will be read by screen readers.</p>
+```
+
+### Hiding content from screen readers
+
+To hide an element from assistive technology, add the [aria-hidden](http://www.w3.org/TR/wai-aria/states_and_properties#aria-hidden) attribute:
+
+```html
+<p aria-hidden="true">This text will be visible on the screen
+but will not be read by a screen reader.</p>
+```
+
 ## Advanced usage
 
 ### Breakpoints

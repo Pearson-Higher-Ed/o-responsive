@@ -55,6 +55,19 @@
 	@include o-responsive-breakpoint(xl to xl) {
 		@include o-responsive-hidden('.o-responsive__xl--hidden');
 	}
+
+	// Screen reader
+	// See http://a11yproject.com/posts/how-to-hide-content/
+	.o-responsive__sr-only {
+		// scss-lint:disable ImportantRule
+		position: absolute !important;
+		clip: rect(1px, 1px, 1px, 1px);
+		padding: 0 !important;
+		border: 0 !important;
+		height: 1px !important;
+		width: 1px !important;
+		overflow: hidden;
+	}
 }
 
 /// Generates a visible class

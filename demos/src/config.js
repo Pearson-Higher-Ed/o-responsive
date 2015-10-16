@@ -10,6 +10,10 @@ module.exports = {
 		{
 			name: 'visibility',
 			template: 'demos/src/visibility.mustache'
+		},
+		{
+			name: 'screen-reader',
+			template: 'demos/src/screen-reader.mustache'
 		}
 	]
 };
