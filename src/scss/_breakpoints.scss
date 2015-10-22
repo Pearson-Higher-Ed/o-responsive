@@ -21,11 +21,9 @@
 		$_query: '#{$_query}(max-width: #{$_max})';
 	}
 
-	@if not $_query {
-		@return null;
+	@if $_query {
+		@media #{$_query} { @content; }
 	}
-
-	@media #{$_query} { @content; }
 }
 
 @function o-responsive-parse-breakpoint($breakpoint) {
